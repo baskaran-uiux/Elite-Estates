@@ -525,18 +525,28 @@ footer { padding: 4rem var(--section-padding) 2rem; background: #fff; border-top
     nav { padding: 1.5rem 5vw; }
     
     .hero { min-height: 100vh; }
-    .hero-main-wrap h1 { font-size: 2.8rem; }
-    .hero-description { font-size: 1rem; margin-bottom: 2rem; }
+    .hero-main-wrap h1 { font-size: 2.5rem; }
+    .hero-description { font-size: 0.95rem; margin-bottom: 2rem; }
     
+    .about { padding: 15vw 5vw; }
+    .reveal-text { font-size: 1.8rem; }
+
+    .ownership-content { gap: 1.5rem; padding-top: 40px; }
+    .ownership-final h2 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .ownership-final p { font-size: 1rem; }
+    .ownership-step { transform: translateY(30px); }
+    .ownership-step h2 { font-size: 1.8rem; }
+    .step-num { font-size: 0.7rem; margin-bottom: 0.5rem; }
+
     .list-item { 
         flex-direction: column; 
         align-items: flex-start; 
-        gap: 1.5rem; 
-        padding: 30px 0;
+        gap: 1rem; 
+        padding: 25px 0;
     }
     
     .list-item .title { 
-        font-size: 1.8rem; 
+        font-size: 1.6rem; 
         opacity: 1 !important; 
     }
     
@@ -547,33 +557,34 @@ footer { padding: 4rem var(--section-padding) 2rem; background: #fff; border-top
     }
     
     .nav-capsule {
-        gap: 1.2rem;
-        padding: 0.8rem 1.4rem;
+        gap: 1rem;
+        padding: 0.7rem 1.2rem;
     }
     
     .bottom-nav {
-        bottom: 1.5rem;
+        bottom: 1.2rem;
     }
     
     .client-content-grid {
         grid-template-columns: 1fr;
-        gap: 4rem;
+        gap: 3rem;
         text-align: center;
     }
     
     .client-image-wrap {
-        height: 300px;
+        height: 250px;
     }
     
     .quote-icon {
-        top: -3rem;
+        top: -2.5rem;
         left: 0;
         transform: none;
     }
+    .quote-text { font-size: 1.6rem; margin-bottom: 2rem; }
     
     .footer-container {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2.5rem;
     }
     
     .footer-columns {
@@ -582,26 +593,26 @@ footer { padding: 4rem var(--section-padding) 2rem; background: #fff; border-top
     
     .footer-bar {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.2rem;
         text-align: center;
-        padding-bottom: 8rem; /* Space for the floating bottom nav */
+        padding-bottom: 7rem; 
     }
     
     .footer-legal, .social-links {
         justify-content: center;
         width: 100%;
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
-    .section-title { font-size: 2.2rem; }
-    .portfolio-sidebar h2 { font-size: 2.8rem; }
-    .property-img-wrap { height: 400px; }
-    .property-meta h3 { font-size: 1.3rem; }
+    .section-title { font-size: 2rem; }
+    .portfolio-sidebar h2 { font-size: 2.4rem; }
+    .property-img-wrap { height: 350px; }
+    .property-meta h3 { font-size: 1.2rem; }
     
     .menu-container {
         grid-template-columns: 1fr;
         padding: 12vh 8vw 5vh;
-        gap: 3rem;
+        gap: 2.5rem;
     }
 }
 /* Full Screen Menu Overlay */
