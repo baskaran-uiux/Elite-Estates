@@ -1,0 +1,11 @@
+{
+  "name": "realestate-tamilnadu",
+  "version": "1.0.0",
+  "description": "Modern Real Estate Website for Tamil Nadu",
+  "scripts": {
+    "dev": "npx -y serve -l 3000 ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Estates | Luxury Real Estate Tamil Nadu</title>
+    <meta name="description"
+        content="Discover the most exclusive luxury properties in Tamil Nadu. Inspired by Monte Real Estate Dubai, adapting for the Southern Indian luxury market.">
+    <link rel="stylesheet" href="index.css">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis for Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Pre-loader -->
+    <div id="pre-loader">
+        <div id="loader-content">
+            <h1 class="luxury-font">ELITE ESTATES.</h1>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-outline"><span class="cursor-text"></span></div>
+
+    <!-- Floating Bottom Navigation -->
+    <nav class="bottom-nav">
+
+
+        <div class="nav-capsule">
+            <div class="logo-icon magnetic">✦</div>
+            <div class="nav-links">
+                <a href="#home" class="magnetic">HOME</a>
+            </div>
+            <div class="menu-toggle magnetic" id="menu-trigger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Restored Centauri Style with Video) -->
+    <header class="hero centauri-style">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="my_new_video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-main-wrap">
+            <h1 id="hero-main-title" class="luxury-font">Beyond Four Walls</h1>
+            <p class="hero-description">Curating the unseen, sculpting the future of Tamil Nadu's architectural legacy.
+            </p>
+            <div class="hero-actions">
+                <a href="#properties" class="primary-btn white-btn magnetic">Explore Collections</a>
+            </div>
+        </div>
+
+        <div class="hero-visuals-grid">
+            <div class="visual-card">
+                <img src="images/hero.png" alt="Featured 1">
+                <div class="visual-meta">
+                    <h3>The Azure Penthouse</h3>
+                    <span>Shoreline Living</span>
+                </div>
+            </div>
+            <div class="visual-card">
+                <img src="images/chettinad.png" alt="Featured 2">
+                <div class="visual-meta">
+                    <h3>The Heritage Estate</h3>
+                    <span>Timeless Luxury</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section (Scroll Text Reveal) -->
+    <section id="about" class="about">
+        <div class="container">
+            <p class="reveal-text">
+                Elite Estates is not just about properties; it's about redefining luxury and living standards in Tamil
+                Nadu. We curate architectural gems that blend tradition with modern innovation, ensuring your legacy is
+                built on excellence, sustainability, and unparalleled comfort.
+            </p>
+        </div>
+    </section>
+
+    <!-- Advantages Grid -->
+    <section id="advantages" class="advantages">
+        <div class="section-header">
+            <span class="section-tag">Explore Our Advantages</span>
+            <h2 class="section-title">Why Elite Estates Stands Unrivalled?</h2>
+        </div>
+        <div class="advantages-grid">
+            <div class="adv-card">
+                <div class="adv-icon">✦</div>
+                <h3 class="reveal-up">Diversity</h3>
+                <p class="reveal-up">Approximately 80% of our population reflects the rich multicultural heritage of Tamil Nadu.</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">✦</div>
+                <h3 class="reveal-up">Growth</h3>
+                <p class="reveal-up">Tamil Nadu's real estate market is seeing a 15% year-on-year growth in luxury sectors.</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">✦</div>
+                <h3 class="reveal-up">Accessibility</h3>
+                <p class="reveal-up">Strategic locations with world-class infrastructure and connectivity.</p>
+            </div>
+            <div class="adv-card">
+                <div class="adv-icon">✦</div>
+                <h3 class="reveal-up">Exemption</h3>
+                <p class="reveal-up">Exclusive tax benefits for NRI and high-value property acquisitions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Path to Smart Ownership (Video Narrative Style) -->
+    <section class="ownership-video-section">
+        <video autoplay muted loop playsinline class="ownership-bg-video">
+            <source src="ownership.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay-dark"></div>
+
+        <div class="ownership-content">
+            <div class="ownership-final">
+                <h2 class="luxury-font">Smart Ownership</h2>
+                <p>Your journey to financial freedom starts here.</p>
+            </div>
+            <div class="ownership-step">
+                <span class="step-num">01</span>
+                <h2>10% Initial Payment</h2>
+            </div>
+            <div class="ownership-step">
+                <span class="step-num">02</span>
+                <h2>5 Years Installment</h2>
+            </div>
+            <div class="ownership-step">
+                <span class="step-num">03</span>
+                <h2>Rental Income - 15%</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailored Solutions (Hover Image Reveal Style) -->
+    <section class="solutions">
+        <div class="container reveal-list">
+            <span class="section-tag white-text">Tailored Solutions</span>
+
+            <a href="#properties" class="list-item">
+                <span class="title">Rusty House</span>
+                <div class="tags">
+                    <span class="tag">Fluid Window</span>
+                    <span class="tag">Sliding Door</span>
+                </div>
+                <img src="images/hero.png" class="reveal-img">
+            </a>
+
+            <a href="#properties" class="list-item">
+                <span class="title">Rosewood Pilates</span>
+                <div class="tags">
+                    <span class="tag">Skylight</span>
+                    <span class="tag">Glass Wall</span>
+                </div>
+                <img src="images/chennai.png" class="reveal-img">
+            </a>
+
+            <a href="#properties" class="list-item">
+                <span class="title">Beulah Walk</span>
+                <div class="tags">
+                    <span class="tag">Vertical Glazing</span>
+                </div>
+                <img src="images/chettinad.png" class="reveal-img">
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Properties Portfolio -->
+
+    <!-- Featured Properties (Monte Staggered Portfolio) -->
+    <section id="properties" class="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-sidebar">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Exclusive Selection</h2>
+                <p class="reveal-up">Curated architectural masterpieces from the heart of Tamil Nadu.</p>
+                <div class="portfolio-sidebar-actions" style="margin-top: 2rem;">
+                    <a href="#" class="primary-btn magnetic reveal-up">View All Projects</a>
+                </div>
+            </div>
+
+            <div class="portfolio-grid-monte">
+                <!-- Row 1 -->
+                <div class="portfolio-item-wrap staggered-up">
+                    <div class="property-card-monte">
+                        <div class="property-img-wrap">
+                            <img src="images/hero.png" alt="Ooty Villa">
+                            <div class="img-mask"></div>
+                        </div>
+                        <div class="property-meta">
+                            <h3>High-End Ooty Villa</h3>
+                            <span>Tamil Nadu, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="portfolio-item-wrap staggered-down">
+                    <div class="property-card-monte">
+                        <div class="property-img-wrap">
+                            <img src="images/chennai.png" alt="Chennai Penthouse">
+                            <div class="img-mask"></div>
+                        </div>
+                        <div class="property-meta">
+                            <h3>Modern Chennai Loft</h3>
+                            <span>Tamil Nadu, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="portfolio-item-wrap staggered-up">
+                    <div class="property-card-monte">
+                        <div class="property-img-wrap">
+                            <img src="images/chettinad.png" alt="Chettinad Mansion">
+                            <div class="img-mask"></div>
+                        </div>
+                        <div class="property-meta">
+                            <h3>Heritage Chettinad Home</h3>
+                            <span>Tamil Nadu, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Stories (Testimonial Slider) -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonial-header">
+            <div class="testimonial-tag">✦ CLIENT STORIES</div>
+            <div class="testimonial-pagination">01 / 03</div>
+            <div class="testimonial-nav">
+                <button id="prev-btn" class="nav-btn-circle magnetic">←</button>
+                <button id="next-btn" class="nav-btn-circle magnetic">→</button>
+            </div>
+        </div>
+
+        <div class="testimonial-slider-wrap">
+            <div class="testimonial-slide active">
+                <div class="client-content-grid">
+                    <div class="client-image-wrap">
+                        <img src="images/hero.png" alt="Client 1">
+                    </div>
+                    <div class="client-quote-wrap">
+                        <span class="quote-icon">“</span>
+                        <p class="quote-text">Unrivaled customer service, cutting edge design and quality. Elite Estates
+                            is firmly lodged in our list of preferred partners for luxury properties.</p>
+                        <div class="client-meta">
+                            <h4>Arun Kumar</h4>
+                            <span>FOUNDER, AK ARCHITECTS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-card">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="card-video-bg">
+                <source src="build_future.mp4" type="video/mp4">
+            </video>
+            <div class="card-overlay"></div>
+
+            <div class="card-content-wrap">
+                <h2>Built Your Future With Us</h2>
+                <p>Ready to begin your premium ownership journey?</p>
+                <div style="margin-top: 1.5rem;">
+                    <a href="mailto:agent@eliteestates.tn" class="primary-btn white-btn magnetic">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo luxury-font">Monte</div>
+                <p>Building Your Dreams In Real Estate</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Our Properties</a></li>
+                        <li><a href="#about">Our Advantages</a></li>
+                        <li><a href="#contact">Our Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <div class="subscribe-section">
+                        <h4>Subscribe to our news</h4>
+                        <p>Stay informed and never miss a beat. Subscribe to our Exclusive New Letter!</p>
+                        <div class="subscribe-form">
+                            <input type="email" placeholder="Enter your email">
+                            <button class="magnetic">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bar">
+            <p>Copyright 2026 © Elite Estates Properties</p>
+            <div class="footer-legal">
+                <a href="#">Terms Of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="magnetic">YouTube</a>
+                <a href="#" class="magnetic">Instagram</a>
+                <a href="#" class="magnetic">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Full Screen Menu Overlay -->
+    <div id="full-screen-menu">
+        <div class="menu-close-btn magnetic" id="menu-close">✕</div>
+
+        <div class="menu-container">
+            <!-- Left Side: Nav Links -->
+            <div class="menu-nav-section">
+                <div class="menu-links">
+                    <a href="#home" class="full-menu-link"><span class="rolling-text" data-text="HOME">HOME</span></a>
+                    <a href="#about" class="full-menu-link"><span class="rolling-text" data-text="COLLECTIONS">COLLECTIONS</span></a>
+                    <a href="#properties" class="full-menu-link"><span class="rolling-text" data-text="PORTFOLIO">PORTFOLIO</span></a>
+                    <a href="#contact" class="full-menu-link"><span class="rolling-text" data-text="CONNECT">CONNECT</span></a>
+                </div>
+            </div>
+
+            <!-- Right Side: Info Section -->
+            <div class="menu-info-section">
+                <div class="menu-info-block">
+                    <h4>LOCATE US</h4>
+                    <p>123 Zayed Road, OMR,<br>Chennai, Tamil Nadu, India</p>
+                </div>
+
+                <div class="menu-info-block">
+                    <h4>GET IN TOUCH</h4>
+                    <p><a href="mailto:agent@eliteestates.tn">agent@eliteestates.tn</a></p>
+                </div>
+
+                <div class="menu-info-block">
+                    <h4>FOLLOW US</h4>
+                    <div class="menu-social-links">
+                        <a href="#">YouTube</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
