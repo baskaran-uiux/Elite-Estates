@@ -521,6 +521,7 @@ footer { padding: 4rem var(--section-padding) 2rem; background: #fff; border-top
 }
 
 @media (max-width: 768px) {
+    :root { --section-padding: 15vw; }
     .advantages-grid, .portfolio-grid { grid-template-columns: 1fr; }
     nav { padding: 1.5rem 5vw; }
     
@@ -605,6 +606,7 @@ footer { padding: 4rem var(--section-padding) 2rem; background: #fff; border-top
     }
 
     .section-title { font-size: 2rem; }
+    .advantages { padding-bottom: 12vh; } /* Extra space at bottom of advantages */
     .portfolio-sidebar h2 { font-size: 2.4rem; }
     .property-img-wrap { height: 350px; }
     .property-meta h3 { font-size: 1.2rem; }
