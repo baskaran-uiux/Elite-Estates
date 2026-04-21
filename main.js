@@ -581,6 +581,20 @@ window.addEventListener('load', () => {
         }
     });
 
+    // Smooth Scroll for Internal Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#' || href === '') return;
+            
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                lenis.scrollTo(target);
+            }
+        });
+    });
+
     // Final global cursor init for new items
     initCursorEffects();
 });
